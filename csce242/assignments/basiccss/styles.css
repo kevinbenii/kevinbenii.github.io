@@ -1,0 +1,78 @@
+/* Structural */
+body {
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    color: #696969;
+    background-image: url(images/aibg.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+#wrapper {
+    background-color: #ffffff;
+    width: 70%;
+    margin: auto;    /* center in the page */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 30px 40px;
+}
+
+header, main, footer {
+    padding: 5px;
+}
+
+/* Typography */
+#page-title {
+    color: #48D1CC;
+}
+#subtitle {
+    color: #48D1CC;
+}
+#author {
+    color: #696969;
+    font-style: italic;
+}
+
+h3 {
+    color: #008B8B;
+}
+
+p {
+    color: #696969;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    color: #696969;
+}
+
+#images {
+    text-align: center;
+}
+
+img {
+    border: 3px solid #008B8B;
+    padding: 4px;
+    margin: 10px;
+    width: 280px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,td {
+    border: 1px solid #008B8B;
+    padding: 10px;
+    text-align: left;
+    color: #696969;
+}
+
+th {
+    background-color: #008B8B;
+    color: #ffffff;
+}

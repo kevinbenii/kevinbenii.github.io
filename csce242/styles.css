@@ -1,0 +1,67 @@
+/* Structural */
+body {
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    color: #696969;
+    background-color: #E0ffff;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+#wrapper {
+    background-color: #ffffff;
+    width: 70%;
+    margin: auto;    /* center in the page */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 30px 40px;
+}
+
+header, main, footer {
+    padding: 5px;
+}
+
+/* Navigation */
+#assignments {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#assignments li {
+    background-color: #E0ffff;
+    border-left: 4px solid #008B8B;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+
+a {
+    color: #008B8B;
+    text-decoration: none;
+}
+
+/* Typography */
+#page-title {
+    color: #48D1CC;
+}
+
+#author {
+    color: #48D1CC;
+}
+
+h3 {
+    color: #008B8B;
+}
+
+p {
+    color: #696969;
+    line-height: 1.6;
+}
+
+#githubcode-repositorylink {
+    color: #696969;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    color: #696969;
+}
