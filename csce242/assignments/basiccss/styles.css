@@ -9,7 +9,7 @@ body {
 }
 
 #wrapper {
-    background-color: #ffffff;
+    background-color: #c9d9da;
     width: 70%;
     margin: auto;    /* center in the page */
     border-radius: 10px;
@@ -24,13 +24,11 @@ header, main, footer {
 /* Typography */
 #page-title {
     color: #48D1CC;
+    text-align: center;
 }
 #subtitle {
     color: #48D1CC;
-}
-#author {
-    color: #696969;
-    font-style: italic;
+    text-align: center;
 }
 
 h3 {
