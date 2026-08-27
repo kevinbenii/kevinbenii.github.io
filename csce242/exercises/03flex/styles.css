@@ -9,6 +9,13 @@ body {
     margin:auto;    /* center in the page */
 }
 
+#main-header {
+    background-color: bisque;
+}
+
+#sidebar, #info {
+    padding: 5px;
+}
 #sidebar {
     background-color: aliceblue;
 }
@@ -17,22 +24,28 @@ body {
     background-color: aquamarine;
 }
 
-#sidebar, #info {
-    padding: 5px;
-}
-
 /* Navigation */
-
-/* Quick Links */
-#quick-links {
+#main-nav, #quick-links {
     list-style-type: none;
     padding-left: 0;
+}
+
+#main-nav li {
+    background-color: darkslateblue;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;  /*remove underline
 }
 
 /* Typography */
 
 
 /* Responsive Design */
+
 /* 600px or larger */
 @media (min-width: 1000px) {
     .columns {
