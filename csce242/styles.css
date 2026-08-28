@@ -20,22 +20,35 @@ header, main, footer {
     padding: 5px;
 }
 
-/* Navigation */
-#assignments {
-    list-style-type: none;
-    padding-left: 0;
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#assignments li {
+.card {
     background-color: #E0ffff;
     border-left: 4px solid #008B8B;
-    margin-bottom: 10px;
     padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;    /* shows the entire image of the page */
+    margin: 0 auto 10px auto;
 }
 
 a {
     color: #008B8B;
     text-decoration: none;
+}
+
+.card a:hover h4 {
+    text-decoration: underline;
 }
 
 /* Typography */
@@ -51,6 +64,11 @@ h3 {
     color: #008B8B;
 }
 
+h4 {
+    color: #008B8B;
+    margin: 0 0 10px 0;
+}
+
 p {
     color: #696969;
     line-height: 1.6;
@@ -64,4 +82,17 @@ p {
 footer {
     text-align: center;
     color: #696969;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 250px;
+    }
 }
