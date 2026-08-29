@@ -54,7 +54,7 @@ body {
 .nav-item a {
     display: block;
     color: #ffffff;
-    text-decoration: none;  /* remove underline */
+    text-decoration: none;  /* removes underline */
     text-align: center;
     padding: 18px 15px;
     font-size: 18px;
@@ -75,7 +75,7 @@ div.row {
     margin-top: 15px;
 }
 
-/* Sidebar + Title columns */
+/* Sidebar and title columns */
 #sidebar {
     background-color: #eab7ba;
     padding: 20px 15px;
