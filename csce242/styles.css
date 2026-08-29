@@ -1,4 +1,4 @@
-/* Structural */
+/* Structure */
 body {
     font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
     color: #696969;
@@ -38,7 +38,7 @@ header, main, footer {
     display: block;
     width: 100%;
     max-height: 220px;
-    object-fit: contain;    /* shows the entire image of the page */
+    object-fit: contain;    
     margin: 0 auto 10px auto;
 }
 
