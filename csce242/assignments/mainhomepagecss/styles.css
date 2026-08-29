@@ -1,0 +1,98 @@
+/* Structure */
+body {
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    color: #696969;
+    background-color: #E0ffff;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+#wrapper {
+    background-color: #ffffff;
+    width: 70%;
+    margin: auto;    /* center in the page */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 30px 40px;
+}
+
+header, main, footer {
+    padding: 5px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #E0ffff;
+    border-left: 4px solid #008B8B;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;    
+    margin: 0 auto 10px auto;
+}
+
+a {
+    color: #008B8B;
+    text-decoration: none;
+}
+
+.card a:hover h4 {
+    text-decoration: underline;
+}
+
+/* Typography */
+#page-title {
+    color: #48D1CC;
+}
+
+#author {
+    color: #48D1CC;
+}
+
+h3 {
+    color: #008B8B;
+}
+
+h4 {
+    color: #008B8B;
+    margin: 0 0 10px 0;
+}
+
+p {
+    color: #696969;
+    line-height: 1.6;
+}
+
+#githubcode-repositorylink {
+    color: #696969;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    color: #696969;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 250px;
+    }
+}
