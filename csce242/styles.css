@@ -77,6 +77,10 @@ p {
 #githubcode-repositorylink {
     color: #696969;
     font-style: italic;
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 
 footer {

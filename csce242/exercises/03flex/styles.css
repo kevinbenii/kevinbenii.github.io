@@ -4,15 +4,24 @@ body {
     background-color: gray;
 }
 
+/* Header */
+#main-header {
+    background-color: bisque;
+    padding-top: 3%;
+}
+
+#logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
 #content {
     width: 80;
     margin:auto;    /* center in the page */
 }
 
-#main-header {
-    background-color: bisque;
-}
-
+/* Sidebar */
 #sidebar, #info {
     padding: 5px;
 }
