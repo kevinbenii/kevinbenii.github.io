@@ -38,7 +38,7 @@ img {
     border-right: 1px solid #666666;
 }
 
-#utility-bar a:last-child {
+#utility-bar a.no-border {
     border-right: none;
 }
 
@@ -266,7 +266,7 @@ img {
     padding: 20px 40px 40px;
 }
 
-#brand-block h2 {
+#university-footer-section h2 {
     font-family: Georgia, serif;
     color: #75000a;
     font-size: 22px;
@@ -299,14 +299,8 @@ img {
     overflow: hidden;
 }
 
-#socials a img {
-    width: 18px;
-    height: 18px;
-    object-fit: contain;
-}
-
-/* Social media Images */
-#uni-socials a img,
+/* Social Media Images */
+#university-socials a img,
 #socials a img {
     width: 18px;
     height: 18px;
@@ -386,12 +380,12 @@ img {
     font-size: 18px;
 }
 
-#uni-socials {
+#university-socials {
     display: flex;
     gap: 12px;
 }
 
-#uni-socials a {
+#university-socials a {
     width: 28px;
     height: 28px;
     border: 1px solid #ffffff;
@@ -413,15 +407,15 @@ img {
     min-width: 150px;
 }
 
-.footer-column:nth-child(1) {
+.footer-column-wide {
     flex: 3;
 }
 
-.footer-column:nth-child(2) {
+.footer-column-medium {
     flex: 2;
 }
 
-.footer-column:nth-child(3) {
+.footer-column-narrow {
     flex: 1;
 }
 
@@ -431,16 +425,21 @@ img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.footer-column a {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
+/* Footer Link Lists */
+.footer-link-list {
+    list-style-type: none;
+    column-width: 180px;
+    column-gap: 20px;
 }
 
-.footer-sublists {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.footer-link-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    break-inside: avoid;
+}
+
+.footer-link-list a {
+    display: block;
 }
 
 /* Copyright Bar */
@@ -482,14 +481,13 @@ img {
         flex-direction: column;
     }
 
-    .footer-column:nth-child(1),
-    .footer-column:nth-child(2),
-    .footer-column:nth-child(3) {
+    .footer-column-wide,
+    .footer-column-medium,
+    .footer-column-narrow {
         flex: 1;
     }
 
-    .footer-sublists {
-        flex-direction: column;
-        gap: 0;
+    .footer-link-list {
+        column-width: auto;
     }
 }
