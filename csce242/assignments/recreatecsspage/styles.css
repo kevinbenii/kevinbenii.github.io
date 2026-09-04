@@ -178,6 +178,7 @@ img {
     flex-wrap: wrap;
     gap: 40px;
     padding: 60px;
+    text-align: center;
 }
 
 #quote-photo {
@@ -210,6 +211,7 @@ img {
     justify-content: center;
     gap: 30px;
     padding: 50px;
+    text-align: center;
 }
 
 .card {
