@@ -51,6 +51,12 @@ a {
     text-decoration: underline;
 }
 
+.youtube-link,
+#figma-link {
+    display: block;
+    margin-top: 5px;
+}
+
 /* Typography */
 #page-title {
     color: #48D1CC;
