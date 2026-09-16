@@ -35,3 +35,23 @@ document.getElementById("txt-num-days").onkeyup = (e) => {
         pMessage.innerHTML = "Your plant is a gooner";
     }
 }
+
+//counting
+let countInterval;
+let count = 0;
+const pCount = document.getElementById("p-count");
+
+document.getElementById("btn-start").onclick = (e) => 
+{
+    console.log("start clicked");
+}
+
+document.getElementById("btn-pause").onclick = (e) => 
+{
+    console.log("Pause clicked");
+}
+
+document.getElementById("btn-stop").onclick = (e) => 
+{
+    console.log("Stop clicked");
+}
