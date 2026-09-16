@@ -1,4 +1,4 @@
-/* Structural */
+/* Structure */
 body {
     font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
     color: #696969;
@@ -57,13 +57,31 @@ img {
     box-shadow: 5px 5px 5px gray;
 }
 
+/* Navigation */
+#home-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#home-link a {
+    color: #008B8B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home-link a:hover {
+    text-decoration: underline;
+}
+
+/* Table */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+    background-color: #ffffff;
 }
 
-th,td {
+th, td {
     border: 1px solid #008B8B;
     padding: 10px;
     text-align: left;
@@ -73,4 +91,8 @@ th,td {
 th {
     background-color: #008B8B;
     color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #e8f4f4;
 }
