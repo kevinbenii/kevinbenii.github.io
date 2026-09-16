@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 - If Statements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header id="main-header">
+            <h1>Assignment 8</h1>
+            <h2 id="page-title">If Statements</h2>
+            <button class="options-menu" id="navToggle" aria-expanded="false">
+                Menu <span class="arrow" id="arrowIcon">&#9662;</span>
+            </button>
+            <nav>
+                <ul class="nav-list" id="navList">
+                    <li><button type="button" data-target="exercise1" id="btnEx1">Exercise 1</button></li>
+                    <li><button type="button" data-target="exercise2" id="btnEx2">Exercise 2</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="project-card" id="exercise1">
+                <h3>Missing Class Point Deductions</h3>
+                <div class="card-body">
+                    <label for="daysMissed">How many days do you intend to miss class?</label>
+                    <input type="number" id="daysMissed" min="0" step="1">
+                    <div class="result" id="ex1Result"></div>
+                </div>
+            </section>
+            <section class="project-card" id="exercise2">
+                <h3>End of Semester Counter</h3>
+                <div class="card-body">
+                    <div class="result" id="ex2Result"></div>
+                </div>
+            </section>
+        </main>
+        <footer id="main-footer">
+            <p>@kevinbeni.com</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

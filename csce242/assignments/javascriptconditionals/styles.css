@@ -1,0 +1,216 @@
+/* Structure */
+/* Basic style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 16px 20px 30px;
+    text-align: center;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: navy;
+}
+
+/* Header */
+#main-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#main-header h1 {
+    font-size: 2em;
+    margin-bottom: 6px;
+}
+
+#page-title {
+    color: steelblue;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Small-screen menu */
+.options-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-family: inherit;
+    font-size: 0.85em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+/* Nav */
+nav {
+    margin-top: 16px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    display: inline-flex;
+}
+
+/* Nav list items */
+.nav-list li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.nav-list button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+    color: steelblue;
+    cursor: pointer;
+    padding: 4px 2px;
+}
+
+.nav-list button:hover,
+.nav-list button.active {
+    color: navy;
+    text-decoration: underline;
+}
+
+/* Cards */
+main {
+    text-align: center;
+}
+
+.project-card {
+    display: none;
+    background: white;
+    border: 2px solid lightblue;
+    box-shadow: 4px 4px 0 lightblue;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.project-card.visible {
+    display: block;
+}
+
+.project-card h3 {
+    margin: 0;
+    padding: 12px 16px;
+    background: lightblue;
+    color: navy;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Input fields */
+.card-body label {
+    display: block;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card-body input[type="number"] {
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    padding: 6px 8px;
+    font-size: 1em;
+    font-family: inherit;
+    text-align: center;
+    border: 1px solid steelblue;
+    border-radius: 3px;
+}
+
+.card-body input[type="number"]:focus {
+    outline: 2px solid navy;
+    outline-offset: 1px;
+}
+
+.result {
+    margin-top: 14px;
+    color: gray;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.result .headline-num {
+    color: navy;
+}
+
+.result .message {
+    margin-top: 6px;
+}
+
+/* Footer */
+#main-footer {
+    color: gray;
+    font-size: 0.9em;
+    padding-top: 10px;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    .options-menu {
+        display: flex;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.25s ease;
+    }
+
+    .nav-list.open {
+        max-height: 200px;
+        margin-top: 10px;
+    }
+
+    .nav-list li {
+        display: block;
+    }
+
+    .nav-list li:not(:last-child)::after {
+        content: "";
+        margin: 0;
+    }
+}
