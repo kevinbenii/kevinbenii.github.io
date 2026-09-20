@@ -211,6 +211,25 @@ footer .logo-mark { width: 113px; height: 94px; }
   margin-top: 34px;
 }
 
+.hero-tags {
+  max-width: 560px;
+  margin: 56px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 96px;
+  column-gap: 20px;
+}
+
+.hero-tags span {
+  font-size: 0.65625rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+}
+
+.hero-tags span:nth-child(odd) { text-align: left; }
+.hero-tags span:nth-child(even) { text-align: right; }
+
 .about-intro { text-align: center; padding-bottom: 60px; }
 .section-head { max-width: 560px; margin: 0 auto 40px; text-align: center; }
 
@@ -424,6 +443,8 @@ footer .logo-mark { width: 113px; height: 94px; }
 
   .hero { padding-top: 56px; }
   .hero-title { font-size: 2rem; }
+  .hero-tags { grid-template-columns: 1fr; row-gap: 16px; text-align: center; }
+  .hero-tags span:nth-child(odd), .hero-tags span:nth-child(even) { text-align: center; }
 
   .footer-top { grid-template-columns: 1fr; gap: 28px; }
 }
