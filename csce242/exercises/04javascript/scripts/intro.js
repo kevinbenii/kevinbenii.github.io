@@ -40,18 +40,68 @@ document.getElementById("txt-num-days").onkeyup = (e) => {
 let countInterval;
 let count = 0;
 const pCount = document.getElementById("p-count");
+const btnStart = document.getElementById("btn-start");
+const btnPause = document.getElementById("btn-pause");
+const btnStop = document.getElementById("btn-stop");
+btnPause.disabled = true;
+btnStop.disabled = true;
 
-document.getElementById("btn-start").onclick = (e) => 
+btnStart.onclick = () =>
 {
-    console.log("start clicked");
+    countInterval = setInterval(()=>{
+        pCount.innerHTML = ++count;
+    },500);
+    btnStart.disabled = true;
+    btnPause.disabled = false;
+    btnStop.disabled = false;
+};
+
+btnPause.onclick = () =>
+{
+    clearInterval(countInterval);
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+};
+
+btnStop.onclick = () =>
+{
+    count=0;
+    pCount.innerHTML = "";
+    clearInterval(countInterval);
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+};
+
+//date display
+setInterval(()=>{
+    const pDisplay = document.getElementById("date-display");
+    const today = new Date();
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+    const year = today.getFullYear();
+    const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+    pDisplay.innerHTML = `${hours}:${minutes}:${seconds} ${month}/${day}/${year}`;
+}, 1000);
+
+//toggle the navigation
+document.querySelector("#toggle-nav").onclick = () => {
+    document.querySelector("#main-nav ul").classList.toggle("hide-small");
 }
 
-document.getElementById("btn-pause").onclick = (e) => 
-{
-    console.log("Pause clicked");
-}
+//record the users donation and fill up the thermometer appropriately
+const GOAL = 10000;
+document.getElementById("goal").innerHTML = GOAL;
 
-document.getElementById("btn-stop").onclick = (e) => 
-{
-    console.log("Stop clicked");
+document.getElementById("btn-donation").onclick = () => {
+    const userDonation = parseInt(document.getElementById("txt-donation").value);
+    const donationP = document.getElementById("donation-message");
+    percent = userDonation / GOAL * 100;
+    
+    donationP.innerHTML = `You are ${percent.toFixed(1)}% to your goal`;
+    document.querySelector(":root").style.setProperty("--donation", percent + "%");
+
 }
