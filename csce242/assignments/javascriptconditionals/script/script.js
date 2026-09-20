@@ -130,7 +130,7 @@ function initSemesterCounter() {
     } else if (daysLeft <= 60) {
         message = "You're over halfway there. Keep the momentum going.";
     } else if (daysLeft <= 100) {
-        message = "Plenty of semester left. Stay consistent and it'll fly by.";
+        message = "Not time to start counting down yet.";
     } else {
         message = "Not time to start counting down yet.";
     }
