@@ -1,5 +1,4 @@
 /* Structure */
-/* Basic style */
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +11,9 @@ body {
 }
 
 .container {
-    max-width: 850px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 16px 20px 30px;
+    padding: 40px 20px 30px;
     text-align: center;
 }
 
@@ -25,7 +24,6 @@ h1, h2, h3 {
 
 /* Header */
 #main-header {
-    position: relative;
     margin-bottom: 20px;
 }
 
@@ -37,28 +35,22 @@ h1, h2, h3 {
 #page-title {
     color: steelblue;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 4px;
 }
 
-/* Small-screen menu */
-.options-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
+/* Navigation */
+nav {
+    margin-top: 12px;
+}
+
+.nav-toggle {
     display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    background-color: navy;
-    color: white;
+    background: none;
     border: none;
-    border-radius: 3px;
-    padding: 6px 12px;
-    font-family: inherit;
-    font-size: 0.85em;
-    font-weight: bold;
-    letter-spacing: 1px;
     cursor: pointer;
+    padding: 4px;
+    color: steelblue;
+    font-size: 1em;
 }
 
 .arrow {
@@ -68,11 +60,6 @@ h1, h2, h3 {
 
 .arrow.open {
     transform: rotate(180deg);
-}
-
-/* Nav */
-nav {
-    margin-top: 16px;
 }
 
 .nav-list {
@@ -86,7 +73,6 @@ nav {
     display: inline-flex;
 }
 
-/* Nav list items */
 .nav-list li:not(:last-child)::after {
     content: "|";
     margin: 0 10px;
@@ -139,7 +125,6 @@ main {
     padding: 20px;
 }
 
-/* Input fields */
 .card-body label {
     display: block;
     color: gray;
@@ -185,16 +170,21 @@ main {
     padding-top: 10px;
 }
 
-/* Small screens */
+/* Responsive Design */
+/* 480px or smaller */
 @media (max-width: 480px) {
-    .options-menu {
-        display: flex;
+    nav {
+        text-align: left;
+    }
+
+    .nav-toggle {
+        display: inline-flex;
     }
 
     .nav-list {
         flex-direction: column;
-        align-items: center;
-        gap: 12px;
+        align-items: flex-start;
+        gap: 6px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.25s ease;
@@ -202,7 +192,7 @@ main {
 
     .nav-list.open {
         max-height: 200px;
-        margin-top: 10px;
+        margin-top: 6px;
     }
 
     .nav-list li {

@@ -1,7 +1,8 @@
-// Exercise 1 constants
+//Numbers used for the attendance math
 const TOTAL_CLASSES = 25;
-const ATTENDANCE_WEIGHT = 7; // Grade percent
+const ATTENDANCE_WEIGHT = 7;
 
+//Run everything once the page loads
 document.addEventListener('DOMContentLoaded', function () {
     initMenuToggle();
     initExerciseNav();
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initSemesterCounter();
 });
 
-// Mobile menu
+//Toggle the small screen menu
 function initMenuToggle() {
     const navToggle = document.getElementById('navToggle');
     const navList = document.getElementById('navList');
@@ -22,7 +23,7 @@ function initMenuToggle() {
     });
 }
 
-// Switch exercises
+//Show Exercise 1 or Exercise 2 based on the button clicked
 function initExerciseNav() {
     const exercise1 = document.getElementById('exercise1');
     const exercise2 = document.getElementById('exercise2');
@@ -51,11 +52,11 @@ function initExerciseNav() {
         showExercise('exercise2');
     });
 
-    // Show Exercise 1 first
+    //Show Exercise 1 first
     showExercise('exercise1');
 }
 
-// Exercise 1 calculator
+//Calculate the grade lost and show a message
 function initMissingClassCalculator() {
     const daysMissedInput = document.getElementById('daysMissed');
     const ex1Result = document.getElementById('ex1Result');
@@ -71,8 +72,7 @@ function initMissingClassCalculator() {
         const days = Number(raw);
 
         if (isNaN(days) || days < 0) {
-            ex1Result.innerHTML =
-                '<div class="message">Please enter a valid number of days.</div>';
+            ex1Result.innerHTML = '<div class="message">Please enter a valid number of days.</div>';
             return;
         }
 
@@ -82,13 +82,13 @@ function initMissingClassCalculator() {
         let message = '';
 
         if (days === 0) {
-            message = 'Perfect attendance! Your grade thanks you.';
+            message = "Perfect attendance! Your grade thanks you.";
         } else if (days <= 2) {
-            message = 'A couple of misses here and there is normal. Just keep it in check.';
+            message = "A couple of misses here and there is normal. Just keep it in check.";
         } else if (days <= 5) {
             message = "You're starting to feel it. Try to make the rest of your classes.";
         } else if (days <= 9) {
-            message = 'This is not an online class, you are missing valuable learning opportunities.';
+            message = "This is not an online class, you are missing valuable learning opportunities.";
         } else {
             message = "That's a serious chunk of the semester gone. Talk to your professor about a plan.";
         }
@@ -96,29 +96,22 @@ function initMissingClassCalculator() {
         const dayLabel = days === 1 ? 'day' : 'days';
 
         ex1Result.innerHTML =
-            '<div>You will lose <span class="headline-num">' +
-            percentLost +
-            '%</span> for skipping ' +
-            days +
-            ' ' +
-            dayLabel +
-            '.</div>' +
-            '<div class="message">' +
-            message +
-            '</div>';
+            '<div>You will lose <span class="headline-num">' + percentLost + '%</span> for skipping ' + days + ' ' + dayLabel + '.</div>' +
+            '<div class="message">' + message + '</div>';
     }
 
     daysMissedInput.addEventListener('input', calculate);
     calculate();
 }
 
-// Exercise 2 counter
+//Calculate the days left in the semester and show a message
 function initSemesterCounter() {
     const ex2Result = document.getElementById('ex2Result');
-    const today = new Date();
-    let lastDay = new Date(today.getFullYear(), 11, 4); // December 4
 
-    // Use next year if needed
+    const today = new Date();
+    let lastDay = new Date(today.getFullYear(), 11, 4);
+
+    //If Dec 4 already passed this year, use next year's
     if (today > lastDay) {
         lastDay = new Date(today.getFullYear() + 1, 11, 4);
     }
@@ -129,24 +122,20 @@ function initSemesterCounter() {
     let message = '';
 
     if (daysLeft <= 0) {
-        message = 'The semester is over! Time to relax (or panic about finals, no judgment).';
+        message = "The semester is over! Time to relax (or panic about finals, no judgment).";
     } else if (daysLeft <= 14) {
-        message = 'The end is near! Push through the final stretch.';
+        message = "The end is near! Push through the final stretch.";
     } else if (daysLeft <= 30) {
-        message = 'One month to go. Finals are in sight.';
+        message = "One month to go. Finals are in sight.";
     } else if (daysLeft <= 60) {
         message = "You're over halfway there. Keep the momentum going.";
     } else if (daysLeft <= 100) {
         message = "Plenty of semester left. Stay consistent and it'll fly by.";
     } else {
-        message = 'Not time to start counting down yet.';
+        message = "Not time to start counting down yet.";
     }
 
     ex2Result.innerHTML =
-        '<div>You have <span class="headline-num">' +
-        daysLeft +
-        '</span> days left in the semester.</div>' +
-        '<div class="message">' +
-        message +
-        '</div>';
+        '<div>You have <span class="headline-num">' + daysLeft + '</span> days left in the semester.</div>' +
+        '<div class="message">' + message + '</div>';
 }
