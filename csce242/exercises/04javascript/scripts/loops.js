@@ -47,3 +47,43 @@ document.getElementById("btn-loop-range").onclick = () => {
         ul.appendChild(li);
     }
 };
+
+//first array example
+document.getElementById("btn-show-toys").onclick = () => {
+    const toys = ["doll", "skate board", "mini car", "board game", "braclets"];
+    const toyList = document.getElementById("toy-list");
+    toyList.innerHTML = "";
+
+    /*
+    for(let i = 0; i < toys.length; i++){
+        const p = document.createElement("p");
+        p.innerHTML = toys[i];
+        toyList.append(p);
+    }*/
+
+    toys.forEach((toy)=>{
+        const p = document.createElement("p").innerHTML;
+        p.innerHTML = toy;
+        toysList.append(p);
+    });
+};
+
+//show a table of toys and prices
+document.getElementById("btn-show-toy-prices").onclick = () => {
+    const div = document.getElementById("toy-info");
+    div.innerHTML = "hi";
+};
+
+    const toyMap = [];
+    toyMap ["doll"] = 129.99;
+    toyMap ["skate board"] = 200.00;
+    toyMap ["mini car"] = 1.99;
+    toyMap ["board game"] = 20.99;
+    toyMap ["braclets"] = 19.24;
+
+
+    for(let toy in toyMap){
+        const p = document.createElement("p");
+        p.innerHTML = `${toy} costs $${toyMap[toy]}`;
+        div.append(p);
+    }
