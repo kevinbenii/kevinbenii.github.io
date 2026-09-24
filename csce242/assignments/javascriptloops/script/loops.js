@@ -32,18 +32,23 @@ const createCar = (color, x, y) => {
 };
 
 const loadCars = (numberOfCars) => {
+  const laneXPositions = [[], []]; //Top lane, bottom lane
+
   for (let i = 0; i < numberOfCars; i++) {
     const color = carColors[Math.floor(Math.random() * carColors.length)];
-    const x = Math.floor(Math.random() * 85);
-    let y;
+    const lane = Math.random() < 0.5 ? 0 : 1;
+    const y = lane === 0 ? Math.floor(Math.random() * 27) + 5 : Math.floor(Math.random() * 27) + 91;
 
-    //Car lane division
-    if (Math.random() < 0.5) {
-      y = Math.floor(Math.random() * 27) + 5;
-    } else {
-      y = Math.floor(Math.random() * 27) + 91;
-    }
+    let x;
+    let tries = 0;
 
+    //Re-roll x if it's too close to a car already in this lane
+    do {
+      x = Math.floor(Math.random() * 85);
+      tries++;
+    } while (laneXPositions[lane].some((usedX) => Math.abs(usedX - x) < 12) && tries < 10);
+
+    laneXPositions[lane].push(x);
     createCar(color, x, y);
   }
 };
