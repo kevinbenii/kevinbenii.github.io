@@ -12,6 +12,7 @@ body {
   background: #8fc563;
 }
 
+/* Road */
 .road {
   position: relative;
   height: 180px;
@@ -20,7 +21,7 @@ body {
   border-bottom: 4px solid white;
 }
 
-/* 50px dash, 40px gap */
+/* Center Line */
 .center-line {
   position: absolute;
   top: 50%;
@@ -42,6 +43,7 @@ body {
   height: 50px;
 }
 
+/* Car Roof */
 .car-roof {
   position: absolute;
   top: 0;
@@ -52,7 +54,7 @@ body {
   border-radius: 10px 10px 0 0;
 }
 
-/* color is set in js */
+/* Car Body */
 .car-body {
   position: absolute;
   top: 12px;
@@ -62,6 +64,7 @@ body {
   border-radius: 10px;
 }
 
+/* Wheels */
 .wheel {
   position: absolute;
   bottom: 0;
