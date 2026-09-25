@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 - Arrays</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Assignment 10</h1>
+        <h2>Arrays</h2>
+    </header>
+    <main>
+        <p>
+            <label for="destination-type">Pick Your Destination Type</label>
+            <select id="destination-type">
+                <option value="">Select</option>
+                <option value="mountains">Mountains</option>
+                <option value="beaches">Beaches</option>
+            </select>
+        </p>
+
+        <ul id="destination-list"></ul>
+
+        <div id="map-container" class="hidden">
+            <iframe id="map" title="Destination map" allowfullscreen loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>@kevinbeni</p>
+    </footer>
+</body>
+</html>
