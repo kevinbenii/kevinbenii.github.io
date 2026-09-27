@@ -104,6 +104,8 @@ p { margin: 0; }
   margin: 0 auto;
 }
 
+.about-intro-text--secondary { margin-top: 16px; }
+
 .section-head h2 { font-size: 1.875rem; }
 .section-head p { color: var(--color-muted); font-size: 0.9375rem; margin-top: 10px; }
 
@@ -410,43 +412,6 @@ footer .logo-mark { width: 113px; height: 94px; }
 
 .page-hero .cta-row { margin-top: 28px; }
 
-.preview-frame {
-  max-width: 760px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.preview-slide {
-  flex: 1;
-  aspect-ratio: 16 / 9;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.preview-slide-label {
-  font-size: 0.875rem;
-  color: var(--color-muted);
-}
-
-.preview-arrow {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  color: var(--color-text);
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: default;
-}
-
 .faq-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 .faq-item { display: block; }
 
@@ -516,8 +481,6 @@ footer .logo-mark { width: 113px; height: 94px; }
   .hero { padding-top: 56px; }
   .hero-title { font-size: 2rem; }
   .page-hero { padding-top: 48px; }
-  .preview-frame { gap: 8px; }
-  .preview-arrow { width: 32px; height: 32px; font-size: 1rem; }
   .hero-tags { grid-template-columns: 1fr; row-gap: 16px; text-align: center; }
   .hero-tags span:nth-child(odd), .hero-tags span:nth-child(even) { text-align: center; }
 
