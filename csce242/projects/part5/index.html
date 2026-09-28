@@ -32,17 +32,34 @@
       <!-- Hero -->
       <section class="hero container">
         <h1 class="hero-title">One hub for every AI tool.</h1>
-        <p class="hero-subhead">Find AI tools for education, coding, business, writing, and more — all in one place.</p>
+        <p class="hero-subhead">Find AI tools for education, coding, business, writing, and more &mdash; all in one place.</p>
         <div class="cta-row">
           <a href="ai-directory.html" class="btn btn-primary">Explore the AI Directory</a>
           <a href="#how-it-works" class="btn btn-secondary">How K·AI works</a>
         </div>
 
-        <div class="hero-tags">
-          <span>EDUCATION &amp; RESEARCH</span>
-          <span>CODING &amp; TECHNOLOGY</span>
-          <span>BUSINESS &amp; PRODUCTIVITY</span>
-          <span>WRITING &amp; CREATIVITY</span>
+        <div class="hub">
+          <svg class="hub-diagram" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+            <line x1="300" y1="150" x2="120" y2="60" stroke="var(--color-border)" stroke-width="1.5"/>
+            <line x1="300" y1="150" x2="480" y2="60" stroke="var(--color-border)" stroke-width="1.5"/>
+            <line x1="300" y1="150" x2="120" y2="240" stroke="var(--color-border)" stroke-width="1.5"/>
+            <line x1="300" y1="150" x2="480" y2="240" stroke="var(--color-border)" stroke-width="1.5"/>
+
+            <circle cx="300" cy="150" r="30" fill="var(--color-surface)" stroke="var(--color-accent)" stroke-width="1.5"/>
+            <text x="300" y="155" text-anchor="middle" class="hub-node-label hub-node-label--center">K&middot;AI</text>
+
+            <circle cx="120" cy="60" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+            <text x="120" y="28" text-anchor="middle" class="hub-node-label">EDUCATION &amp; RESEARCH</text>
+
+            <circle cx="480" cy="60" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+            <text x="480" y="28" text-anchor="middle" class="hub-node-label">CODING &amp; TECH</text>
+
+            <circle cx="120" cy="240" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+            <text x="120" y="278" text-anchor="middle" class="hub-node-label">BUSINESS &amp; PRODUCTIVITY</text>
+
+            <circle cx="480" cy="240" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+            <text x="480" y="278" text-anchor="middle" class="hub-node-label">WRITING &amp; CREATIVITY</text>
+          </svg>
         </div>
       </section>
 
@@ -96,22 +113,22 @@
             <p>Browse different AI tools.</p>
           </div>
           <div class="card-grid">
-            <a href="study.html" class="card tool-card">
+            <a href="study.html" class="card tool-card tool-card--featured">
               <span class="tool-tag">EDUCATION AND RESEARCH</span>
               <h3 class="card-title">Study</h3>
               <p class="card-desc">Turns notes into a study guide.</p>
             </a>
-            <a href="code-fixer.html" class="card tool-card">
+            <a href="code-fixer.html" class="card tool-card tool-card--featured">
               <span class="tool-tag">CODING AND TECHNOLOGY</span>
               <h3 class="card-title">Code Fixer</h3>
               <p class="card-desc">Checks and debugs your code.</p>
             </a>
-            <a href="plan.html" class="card tool-card">
+            <a href="task.html" class="card tool-card tool-card--featured">
               <span class="tool-tag">BUSINESS AND PRODUCTIVITY</span>
-              <h3 class="card-title">Plan</h3>
-              <p class="card-desc">Turns to-do lists into daily schedules.</p>
+              <h3 class="card-title">Task</h3>
+              <p class="card-desc">Creates and organizes daily tasks.</p>
             </a>
-            <a href="write.html" class="card tool-card">
+            <a href="write.html" class="card tool-card tool-card--featured">
               <span class="tool-tag">WRITING AND CREATIVITY</span>
               <h3 class="card-title">Write</h3>
               <p class="card-desc">Helps you write.</p>
