@@ -497,7 +497,7 @@ footer .logo-mark { width: 113px; height: 94px; }
   display: block;
 }
 
-/* Tool card featured / view profile */
+/* Tool card featured */
 .tool-card--featured { border-left-color: var(--color-accent); }
 .tool-card .view-profile {
   display: inline-block;
@@ -507,7 +507,7 @@ footer .logo-mark { width: 113px; height: 94px; }
   font-weight: 600;
 }
 
-/* Category page: Output section */
+/* Category */
 .output-section {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -587,7 +587,7 @@ footer .logo-mark { width: 113px; height: 94px; }
 
 .pill:hover { border-color: rgba(243, 244, 250, 0.3); }
 
-/* Detail page: breadcrumb */
+/* Detail page */
 .breadcrumb {
   display: flex;
   align-items: center;
@@ -602,7 +602,7 @@ footer .logo-mark { width: 113px; height: 94px; }
 .breadcrumb-trail strong { color: var(--color-text); font-weight: 700; }
 .breadcrumb-back { color: var(--color-accent); font-weight: 600; }
 
-/* Detail layout: sidebar + content */
+/* Detail layout */
 .detail-layout {
   display: grid;
   grid-template-columns: 220px 1fr;
