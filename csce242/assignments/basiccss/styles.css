@@ -1,15 +1,17 @@
 /* Structure */
 body {
     font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
-    color: #696969;
+    color: #2F4F4F;
     background-image: url(images/aibg.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 40px 20px;
 }
 
 #wrapper {
-    background-color: #c9d9da;
+    background-color: #C9D9DA;
     width: 70%;
     margin: auto;    /* center in the page */
     border-radius: 10px;
@@ -21,13 +23,22 @@ header, main, footer {
     padding: 5px;
 }
 
+/* Header banner */
+#header {
+    background-color: #0B3C3D;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 /* Typography */
 #page-title {
     color: #48D1CC;
     text-align: center;
+    margin-top: 0;
 }
+
 #subtitle {
-    color: #48D1CC;
+    color: #AFEEEE;
     text-align: center;
 }
 
@@ -36,24 +47,28 @@ h3 {
 }
 
 p {
-    color: #696969;
+    color: #2F4F4F;
     line-height: 1.6;
 }
 
-footer {
+#footer {
     text-align: center;
-    color: #696969;
+    color: #2F4F4F;
 }
 
+/* Images */
 #images {
     text-align: center;
 }
 
 img {
+    width: 280px;
+    height: 190px;
+    object-fit: cover;
     border: 3px solid #008B8B;
     padding: 4px;
+    background-color: #FFFFFF;
     margin: 10px;
-    width: 280px;
     box-shadow: 5px 5px 5px gray;
 }
 
@@ -64,35 +79,35 @@ img {
 }
 
 #home-link a {
-    color: #008B8B;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
 }
 
 #home-link a:hover {
-    text-decoration: underline;
+    color: #48D1CC;
 }
 
 /* Table */
-table {
+#ai-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 th, td {
     border: 1px solid #008B8B;
     padding: 10px;
     text-align: left;
-    color: #696969;
+    color: #2F4F4F;
 }
 
 th {
     background-color: #008B8B;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 tr:nth-child(even) td {
-    background-color: #e8f4f4;
+    background-color: #E8F4F4;
 }
