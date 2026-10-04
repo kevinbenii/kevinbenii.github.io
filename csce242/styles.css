@@ -56,14 +56,21 @@ a {
 }
 
 .youtube-link,
-#figma-link,
-.card-link {
+#figma-link {
     display: block;
     margin-top: 5px;
 }
 
+/* Setup card */
 .card-link {
+    display: block;
     text-align: center;
+    text-decoration: underline;
+    margin-top: 4px;
+}
+
+.setup-card img {
+    margin-bottom: 8px;
 }
 
 /* Typography */
