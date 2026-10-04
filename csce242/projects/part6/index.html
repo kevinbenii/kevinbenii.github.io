@@ -14,6 +14,7 @@
           <span class="logo-text">K·AI</span>
         </a>
 
+        <!-- JS menu: toggle handled in script/script.js -->
         <button type="button" class="nav-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -38,6 +39,7 @@
           <a href="#how-it-works" class="btn btn-secondary">How K·AI works</a>
         </div>
 
+        <!-- Group feedback: "Make the hub illustration clickable" - each node is now wrapped in a link -->
         <div class="hub">
           <svg class="hub-diagram" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
             <line x1="300" y1="150" x2="120" y2="60" stroke="var(--color-border)" stroke-width="1.5"/>
@@ -48,17 +50,25 @@
             <circle cx="300" cy="150" r="30" fill="var(--color-surface)" stroke="var(--color-accent)" stroke-width="1.5"/>
             <text x="300" y="155" text-anchor="middle" class="hub-node-label hub-node-label--center">K&middot;AI</text>
 
-            <circle cx="120" cy="60" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
-            <text x="120" y="28" text-anchor="middle" class="hub-node-label">EDUCATION &amp; RESEARCH</text>
+            <a href="educationandresearch.html" class="hub-node">
+              <circle cx="120" cy="60" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+              <text x="120" y="28" text-anchor="middle" class="hub-node-label">EDUCATION &amp; RESEARCH</text>
+            </a>
 
-            <circle cx="480" cy="60" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
-            <text x="480" y="28" text-anchor="middle" class="hub-node-label">CODING &amp; TECH</text>
+            <a href="codingandtechnology.html" class="hub-node">
+              <circle cx="480" cy="60" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+              <text x="480" y="28" text-anchor="middle" class="hub-node-label">CODING &amp; TECH</text>
+            </a>
 
-            <circle cx="120" cy="240" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
-            <text x="120" y="278" text-anchor="middle" class="hub-node-label">BUSINESS &amp; PRODUCTIVITY</text>
+            <a href="businessandproductivity.html" class="hub-node">
+              <circle cx="120" cy="240" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+              <text x="120" y="278" text-anchor="middle" class="hub-node-label">BUSINESS &amp; PRODUCTIVITY</text>
+            </a>
 
-            <circle cx="480" cy="240" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
-            <text x="480" y="278" text-anchor="middle" class="hub-node-label">WRITING &amp; CREATIVITY</text>
+            <a href="writingandcreativity.html" class="hub-node">
+              <circle cx="480" cy="240" r="20" fill="var(--color-surface)" stroke="var(--color-border)" stroke-width="1.5"/>
+              <text x="480" y="278" text-anchor="middle" class="hub-node-label">WRITING &amp; CREATIVITY</text>
+            </a>
           </svg>
         </div>
       </section>
@@ -68,8 +78,8 @@
         <span class="eyebrow eyebrow--center">ABOUT K·AI</span>
         <p class="about-intro-text">
           AI has become part of daily life — not just for specialists, but for anyone trying to learn, build, or get work done.
-          K·AI exists because finding the right tool for that shouldn&rsquo;t mean digging through a dozen tabs.
-          It&rsquo;s a central hub for AI tools across education, coding, business, writing, and beyond, built by a student who was tired of doing exactly that.
+          K·AI exists because finding the right tool for that shouldn't mean digging through a dozen tabs.
+          It's a central hub for AI tools across education, coding, business, writing, and beyond, built by a student who was tired of doing exactly that.
         </p>
       </section>
 
@@ -201,6 +211,27 @@
               <div class="icon-box"><span class="icon-dot icon-dot--blue"></span></div>
               <h3 class="card-title">Built for students</h3>
               <p class="card-desc">Made by a student, for the tools students actually reach for.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Group feedback: "Utilize the space on the website" - I added some content to fill up the space -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title-solo">What students say</h2>
+          <div class="card-grid">
+            <div class="card quote-card">
+              <p class="card-desc">&ldquo;I stopped bookmarking random AI sites once I found K&middot;AI. Everything I need for class is sorted by category.&rdquo;</p>
+              <span class="quote-name">&mdash; Computer Science major</span>
+            </div>
+            <div class="card quote-card">
+              <p class="card-desc">&ldquo;Code Fixer alone saved me hours of debugging before a project deadline.&rdquo;</p>
+              <span class="quote-name">&mdash; Engineering major</span>
+            </div>
+            <div class="card quote-card">
+              <p class="card-desc">&ldquo;Simple, fast, no clutter. I use Study every week before exams.&rdquo;</p>
+              <span class="quote-name">&mdash; Business major</span>
             </div>
           </div>
         </div>
