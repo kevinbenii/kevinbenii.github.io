@@ -56,9 +56,14 @@ a {
 }
 
 .youtube-link,
-#figma-link {
+#figma-link,
+.card-link {
     display: block;
     margin-top: 5px;
+}
+
+.card-link {
+    text-align: center;
 }
 
 /* Typography */
