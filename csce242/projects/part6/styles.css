@@ -567,7 +567,7 @@ footer .logo-mark { width: 113px; height: 94px; }
   flex-shrink: 0;
 }
 
-/* Explore other categories pills */
+/* Explore other categories */
 .pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -737,7 +737,7 @@ footer .logo-mark { width: 113px; height: 94px; }
 .detail-section { margin-top: 56px; }
 .detail-section h2 { font-size: 1.5rem; margin-bottom: 22px; }
 
-/* About page: story grid */
+/* About page */
 .about-grid {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -779,7 +779,7 @@ footer .logo-mark { width: 113px; height: 94px; }
 .quote-block p { font-size: 1.25rem; font-weight: 600; line-height: 1.5; max-width: 800px; margin: 0 auto; }
 .quote-block cite { display: block; margin-top: 18px; color: var(--color-muted); font-size: 0.875rem; font-style: normal; }
 
-/* Help page: FAQ list */
+/* Help page */
 .faq-list { max-width: 800px; margin: 0 auto; }
 
 .faq-list-item {
@@ -866,7 +866,7 @@ footer .logo-mark { width: 113px; height: 94px; }
 
 .contact-form .btn { align-self: flex-start; }
 
-/* Lightbox (used by the JavaScript lightbox in script/script.js) */
+/* JavaScript lightbox feature */
 .profile-thumb { cursor: zoom-in; }
 
 .lightbox-overlay {

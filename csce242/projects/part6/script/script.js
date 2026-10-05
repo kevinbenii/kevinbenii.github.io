@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/* Javascript lightbox function */
+/* JavaScript lightbox feature */
 document.addEventListener('DOMContentLoaded', function () {
   var thumbs = document.querySelectorAll('.profile-thumb');
   if (!thumbs.length) return;
