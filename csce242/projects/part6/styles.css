@@ -160,7 +160,6 @@ p {
   color: var(--color-bg);
 }
 
-/* Feedback fix: flat hover, no filter/transform (keep CSS simple) */
 .btn-primary:hover {
   background: #8f73ff;
 }
@@ -176,7 +175,6 @@ p {
 }
 
 /* Header */
-/* Feedback fix: flat header background, no blur (keep CSS simple) */
 .site-header {
   position: sticky;
   top: 0;
@@ -218,7 +216,6 @@ footer .logo-mark {
 }
 
 /* Navigation */
-/* addEventListener / classList.toggle used on this button: see script/script.js, w3schools.com/jsref/met_document_addeventlistener.asp */
 .site-nav {
   display: flex;
   align-items: center;
@@ -399,37 +396,6 @@ footer .logo-mark {
   font-weight: 700;
 }
 
-/* Group feedback: "Utilize the space on the website" - stats strip under the hero */
-.stats-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 1000px;
-  margin: 48px auto 0;
-  padding: 28px 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-num {
-  display: block;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.75rem;
-  color: var(--color-text);
-}
-
-.stat-label {
-  display: block;
-  font-size: 0.8125rem;
-  color: var(--color-muted);
-  margin-top: 6px;
-}
-
 .founder-grid {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -487,7 +453,7 @@ footer .logo-mark {
   max-width: 38ch;
 }
 
-/* Group feedback: "Utilize the space on the website" - testimonial cards */
+/* Group feedback: "Utilize the space on the website" - Testimonial statements */
 .quote-card .card-desc {
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -501,7 +467,6 @@ footer .logo-mark {
   font-weight: 600;
 }
 
-/* Feedback fix: flat background, no gradient (keep CSS simple) */
 .cta-banner {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -619,7 +584,7 @@ footer .logo-mark {
   display: block;
 }
 
-/* Group feedback: "Make the hub illustration clickable" - links around category nodes */
+/* Group feedback: "Make the hub illustration clickable" - Clickable nodes */
 .hub-node {
   cursor: pointer;
 }
@@ -710,7 +675,7 @@ footer .logo-mark {
   display: block;
 }
 
-/* Tool card featured */
+/* Tool card features */
 .tool-card--featured {
   border-left-color: var(--color-accent);
 }
@@ -799,7 +764,7 @@ footer .logo-mark {
   flex-shrink: 0;
 }
 
-/* Explore other categories pills */
+/* Explore other categories */
 .pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -895,8 +860,7 @@ footer .logo-mark {
   flex-wrap: wrap;
 }
 
-/* JS feature: lightbox - click the photo to see it enlarged, see script/script.js */
-/* Feedback fix: flat background, no gradient (keep CSS simple) */
+/* Javascript lightbox feature */
 .profile-thumb {
   width: 96px;
   height: 96px;
@@ -1011,7 +975,7 @@ footer .logo-mark {
   margin-bottom: 22px;
 }
 
-/* About page: story grid */
+/* About page */
 .about-grid {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -1066,7 +1030,6 @@ footer .logo-mark {
   margin-bottom: 0;
 }
 
-/* Feedback fix: flat background, no gradient (keep CSS simple) */
 .quote-block {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -1091,7 +1054,7 @@ footer .logo-mark {
   font-style: normal;
 }
 
-/* Help page: FAQ list */
+/* Help page */
 .faq-list {
   max-width: 800px;
   margin: 0 auto;
@@ -1221,7 +1184,7 @@ footer .logo-mark {
   align-self: flex-start;
 }
 
-/* JS feature: lightbox overlay - createElement in script/script.js, w3schools.com/jsref/met_document_createelement.asp */
+/* Javascript lightbox feature: W3schools */
 .lightbox-overlay {
   position: fixed;
   top: 0;
@@ -1265,6 +1228,7 @@ body.lightbox-locked {
 }
 
 /* Responsive Design */
+/* Media queries */
 /* 900px or smaller */
 @media (max-width: 900px) {
   :root {
@@ -1290,10 +1254,6 @@ body.lightbox-locked {
 
   .about-intro {
     padding-bottom: 48px;
-  }
-
-  .stats-strip {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .founder-grid {
@@ -1335,7 +1295,7 @@ body.lightbox-locked {
 
 /* 760px or smaller */
 @media (max-width: 760px) {
-  /* Professor feedback: menu toggle was barely visible - now a visible, larger tappable button */
+  /* Professor/TA feedback : Visible menu toggle */
   .nav-toggle-btn {
     display: flex;
     flex-direction: column;
@@ -1424,11 +1384,6 @@ body.lightbox-locked {
     text-align: center;
   }
 
-  .stats-strip {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-
   .footer-top {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -1486,11 +1441,6 @@ body.lightbox-locked {
 
   .btn {
     width: 100%;
-  }
-
-  .stats-strip {
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
   }
 
   .cta-banner {
