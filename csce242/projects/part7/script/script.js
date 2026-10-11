@@ -1,6 +1,4 @@
 /* Navigation */
-/* addEventListener: w3schools.com/jsref/met_document_addeventlistener.asp */
-/* classList.toggle: w3schools.com/jsref/prop_element_classlist.asp */
 document.addEventListener('DOMContentLoaded', function () {
   var toggleBtn = document.querySelector('.nav-toggle-btn');
   var nav = document.getElementById('site-nav');
@@ -61,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* JSON file parsing - It can be found in the aidirectory.html page */
-/* Hosted on GitHub Pages (a local file would give a CORS error) */
+/* JSON URL */
 var jsonUrl = 'https://kevinbenii.github.io/csce242/projects/part7/tools.json';
 var imageFolder = 'https://kevinbenii.github.io/csce242/projects/part7/';
 
@@ -97,9 +95,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('contact-form');
   var result = document.getElementById('form-result');
   if (!form || !result) return;
+  var hideTimer;
 
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
+    clearTimeout(hideTimer);
     result.className = 'form-result';
     result.textContent = 'Sending...';
 
@@ -112,15 +112,20 @@ document.addEventListener('DOMContentLoaded', function () {
       success = false;
     }
 
-    setTimeout(function () {
-      if (success) {
-        result.className = 'form-result is-success';
-        result.textContent = 'Thanks! Your message was sent.';
-        form.reset();
-      } else {
-        result.className = 'form-result is-error';
-        result.textContent = 'Sorry, your message could not be sent. Please try again.';
-      }
+    if (success) {
+      result.className = 'form-result is-success';
+      result.textContent = 'Thanks! Your message was sent.';
+      form.reset();
+    } else {
+      result.className = 'form-result is-error';
+      result.textContent = 'Sorry, your message could not be sent. Please try again.';
+    }
+
+    /* Feedback delay */
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function () {
+      result.className = 'form-result';
+      result.textContent = '';
     }, 1000);
   });
 });
