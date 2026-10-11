@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* JSON file parsing - It can be found in the aidirectory.html page */
 /* Hosted on GitHub Pages (a local file would give a CORS error) */
-var jsonUrl = 'https://kevinbenii.github.io/json/tools.json';
-var imageFolder = 'https://kevinbenii.github.io/json/';
+var jsonUrl = 'https://kevinbenii.github.io/csce242/projects/part7/tools.json';
+var imageFolder = 'https://kevinbenii.github.io/csce242/projects/part7/';
 
 async function showTools() {
   var list = document.getElementById('tools-list');
