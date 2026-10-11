@@ -58,33 +58,45 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* JSON file parsing - It can be found in the aidirectory.html page */
+/* JSON file parsing - It can be found in the aidirectory.html, index.html and the 4 category pages */
 /* JSON URL */
 var jsonUrl = 'https://kevinbenii.github.io/csce242/projects/part7/tools.json';
 var imageFolder = 'https://kevinbenii.github.io/csce242/projects/part7/';
 
 async function showTools() {
-  var list = document.getElementById('tools-list');
-  if (!list) return;
+  var lists = document.querySelectorAll('.tools-list');
+  if (!lists.length) return;
 
   try {
     var response = await fetch(jsonUrl);
     var tools = await response.json();
 
-    list.innerHTML = '';
-    for (var i = 0; i < tools.length; i++) {
-      var tool = tools[i];
-      list.innerHTML +=
-        '<a href="' + tool.link + '" class="card tool-card tool-card--featured">' +
-        '<img class="tool-card-img" src="' + imageFolder + tool.img_name + '" alt="' + tool.name + '">' +
-        '<span class="tool-tag">' + tool.category + '</span>' +
-        '<h3 class="card-title">' + tool.name + '</h3>' +
-        '<p class="card-desc">' + tool.description + '</p>' +
-        '<p class="tool-meta">' + tool.price + ' &middot; ' + tool.platform + '</p>' +
-        '</a>';
+    for (var j = 0; j < lists.length; j++) {
+      var list = lists[j];
+      /* data-category shows only one category, data-limit shows only the first few tools */
+      var category = list.getAttribute('data-category');
+      var limit = Number(list.getAttribute('data-limit')) || tools.length;
+      var shown = 0;
+
+      list.innerHTML = '';
+      for (var i = 0; i < tools.length && shown < limit; i++) {
+        var tool = tools[i];
+        if (category && tool.category !== category) continue;
+        shown++;
+        list.innerHTML +=
+          '<a href="' + tool.link + '" class="card tool-card tool-card--featured">' +
+          '<img class="tool-card-img" src="' + imageFolder + tool.img_name + '" alt="' + tool.name + '">' +
+          '<span class="tool-tag">' + tool.category + '</span>' +
+          '<h3 class="card-title">' + tool.name + '</h3>' +
+          '<p class="card-desc">' + tool.description + '</p>' +
+          '<p class="tool-meta">' + tool.price + ' &middot; ' + tool.platform + '</p>' +
+          '</a>';
+      }
     }
   } catch (error) {
-    list.innerHTML = '<p class="card-desc">Sorry, the tools could not be loaded.</p>';
+    for (var k = 0; k < lists.length; k++) {
+      lists[k].innerHTML = '<p class="card-desc">Sorry, the tools could not be loaded.</p>';
+    }
   }
 }
 

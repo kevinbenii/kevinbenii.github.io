@@ -1152,6 +1152,12 @@ footer .logo-mark {
   display: block;
 }
 
+/* Category pages show 2 tools, so the grid is kept narrow and centered */
+.card-grid--pair {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 .tool-meta {
   margin: 10px 0 0;
   font-size: 0.8125rem;
