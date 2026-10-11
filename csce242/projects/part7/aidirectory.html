@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- JSON File Parsing -->
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo">
-          <img src="image/logo.png" alt="K·AI logo" class="logo-mark">
+          <img src="images/logo.png" alt="K·AI logo" class="logo-mark">
           <span class="logo-text">K·AI</span>
         </a>
 
@@ -62,27 +63,9 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title-solo">Popular this week</h2>
-          <div class="card-grid">
-            <a href="study.html" class="card tool-card tool-card--featured">
-              <span class="tool-tag">EDUCATION AND RESEARCH</span>
-              <h3 class="card-title">Study</h3>
-              <p class="card-desc">Turns notes into a study guide.</p>
-            </a>
-            <a href="codefixer.html" class="card tool-card tool-card--featured">
-              <span class="tool-tag">CODING AND TECHNOLOGY</span>
-              <h3 class="card-title">Code Fixer</h3>
-              <p class="card-desc">Checks your code.</p>
-            </a>
-            <a href="task.html" class="card tool-card tool-card--featured">
-              <span class="tool-tag">BUSINESS AND PRODUCTIVITY</span>
-              <h3 class="card-title">Task</h3>
-              <p class="card-desc">Creates and organizes daily tasks.</p>
-            </a>
-            <a href="write.html" class="card tool-card tool-card--featured">
-              <span class="tool-tag">WRITING AND CREATIVITY</span>
-              <h3 class="card-title">Write</h3>
-              <p class="card-desc">Helps you write.</p>
-            </a>
+          <!-- Part 7 (JSON): the hard-coded cards are gone; script/script.js fills this div from json/tools.json -->
+          <div class="card-grid" id="tools-list">
+            <p class="card-desc">Loading tools…</p>
           </div>
         </div>
       </section>
@@ -168,7 +151,7 @@
         <div class="footer-top">
           <div class="footer-brand">
             <a href="index.html" class="logo">
-              <img src="image/logo.png" alt="K·AI logo" class="logo-mark">
+              <img src="images/logo.png" alt="K·AI logo" class="logo-mark">
               <span class="logo-text">K·AI</span>
             </a>
             <p class="card-desc">A central website hub for AI tools</p>

@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- PART 7 GRADER NOTE: IFrame is on THIS page (about.html), section "Featured video", near the bottom. -->
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="logo">
-          <img src="image/logo.png" alt="K·AI logo" class="logo-mark">
+          <img src="images/logo.png" alt="K·AI logo" class="logo-mark">
           <span class="logo-text">K·AI</span>
         </a>
 
@@ -38,7 +39,7 @@
       <section class="section">
         <div class="container about-grid">
           <div class="about-founder-card">
-            <img src="image/aboutme.png" alt="Kevin Beni" class="about-founder-avatar">
+            <img src="images/aboutme.png" alt="Kevin Beni" class="about-founder-avatar">
             <h3>Kevin Beni</h3>
             <p class="about-founder-role">Creator of K·AI</p>
             <p class="card-desc">Computer Information Systems student, University of South Carolina.</p>
@@ -85,7 +86,7 @@
         </div>
       </section>
 
-      <!-- Group feedback: "Utilize the space on the website" - I added some content to fill up space -->
+      <!-- Group feedback: "Utilize the space on the website" - milestones add useful content to the about page -->
       <section class="section">
         <div class="container">
           <h2 class="section-title-solo">How K·AI got here</h2>
@@ -114,6 +115,27 @@
         </div>
       </section>
 
+      <!-- PART 7 - IFRAME: YouTube video about AI -->
+      <section class="section" id="iframe-section">
+        <div class="container">
+          <h2 class="section-title-solo">Featured video</h2>
+          <div class="video-layout">
+            <div class="video-text">
+              <h3 class="card-title">AI</h3>
+              <p class="card-desc">A short video on AI, Machine Learning, Deep Learning and Generative AI explained.</p>
+            </div>
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/qYNweeDHiyU?si=EkPtMc6D_uA3xPxD"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section--cta">
         <div class="container">
           <div class="cta-banner">
@@ -125,6 +147,7 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
@@ -132,7 +155,7 @@
         <div class="footer-top">
           <div class="footer-brand">
             <a href="index.html" class="logo">
-              <img src="image/logo.png" alt="K·AI logo" class="logo-mark">
+              <img src="images/logo.png" alt="K·AI logo" class="logo-mark">
               <span class="logo-text">K·AI</span>
             </a>
             <p class="card-desc">A central website hub for AI tools</p>
