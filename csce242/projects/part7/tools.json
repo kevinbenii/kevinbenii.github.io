@@ -38,5 +38,45 @@
     "platform": "Web",
     "link": "write.html",
     "img_name": "images/write.png"
+  },
+  {
+    "_id": 5,
+    "name": "Practice",
+    "category": "Education and Research",
+    "description": "Makes quizzes for you.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "educationandresearch.html",
+    "img_name": "images/practice.jpg"
+  },
+  {
+    "_id": 6,
+    "name": "Debugger",
+    "category": "Coding and Technology",
+    "description": "Finds bugs in your code.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "codingandtechnology.html",
+    "img_name": "images/debugger.png"
+  },
+  {
+    "_id": 7,
+    "name": "Report",
+    "category": "Business and Productivity",
+    "description": "Writes reports for you.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "businessandproductivity.html",
+    "img_name": "images/report.png"
+  },
+  {
+    "_id": 8,
+    "name": "Creation",
+    "category": "Writing and Creativity",
+    "description": "Generates images and videos for you.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "writingandcreativity.html",
+    "img_name": "images/creation.jpg"
   }
 ]
