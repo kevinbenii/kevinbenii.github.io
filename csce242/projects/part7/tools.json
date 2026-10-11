@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 1,
+    "name": "Study",
+    "category": "Education and Research",
+    "description": "Turns notes into a study guide.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "study.html",
+    "img_name": "images/study.png"
+  },
+  {
+    "_id": 2,
+    "name": "Code Fixer",
+    "category": "Coding and Technology",
+    "description": "Checks your code.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "codefixer.html",
+    "img_name": "images/codefixer.png"
+  },
+  {
+    "_id": 3,
+    "name": "Task",
+    "category": "Business and Productivity",
+    "description": "Creates and organizes daily tasks.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "task.html",
+    "img_name": "images/task.jpg"
+  },
+  {
+    "_id": 4,
+    "name": "Write",
+    "category": "Writing and Creativity",
+    "description": "Helps you write.",
+    "price": "Free to try",
+    "platform": "Web",
+    "link": "write.html",
+    "img_name": "images/write.png"
+  }
+]
