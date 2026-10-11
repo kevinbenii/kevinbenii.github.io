@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/* JavaScript lightbox feature */
-/* Based on: w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox */
+/* JavaScript lightbox feature - I used the (w3schools.com/howto/tryit.asp?filename=tryhow_css_js_lightbox) resource to help implement this feature */
 document.addEventListener('DOMContentLoaded', function () {
   var thumbs = document.querySelectorAll('.profile-thumb');
   if (!thumbs.length) return;
@@ -61,8 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-/* PART 7 - JSON FILE PARSING (shown on aidirectory.html; data is in json/tools.json) */
-/* fetch + async/await: from the CSCE 242 class videos and w3schools.com/js/js_api_fetch.asp */
+/* JSON file parsing - It can be found in the aidirectory.html page */
 /* Hosted on GitHub Pages (a local file would give a CORS error) */
 var jsonUrl = 'https://kevinbenii.github.io/json/tools.json';
 var imageFolder = 'https://kevinbenii.github.io/json/';
@@ -94,9 +92,7 @@ async function showTools() {
 
 document.addEventListener('DOMContentLoaded', showTools);
 
-/* PART 7 - CONTACT FORM (form is on help.html) */
-/* Sends with fetch to Web3Forms (docs.web3forms.com) so the page does not redirect.
-   HTML validation (required, type="email") is in help.html (the-art-of-web.com/html/html5-form-validation/). */
+/* Contact form - It can be found on the help.html page */
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('contact-form');
   var result = document.getElementById('form-result');
@@ -116,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
       success = false;
     }
 
-    /* wait about 1 second so the feedback does not just flicker */
     setTimeout(function () {
       if (success) {
         result.className = 'form-result is-success';
