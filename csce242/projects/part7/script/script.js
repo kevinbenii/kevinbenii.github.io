@@ -73,7 +73,6 @@ async function showTools() {
 
     for (var j = 0; j < lists.length; j++) {
       var list = lists[j];
-      /* data-category shows only one category, data-limit shows only the first few tools */
       var category = list.getAttribute('data-category');
       var limit = Number(list.getAttribute('data-limit')) || tools.length;
       var shown = 0;
